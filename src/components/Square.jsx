@@ -1,10 +1,11 @@
 import './Square.css'
 import React from 'react'
-import { Button } from '@material-ui/core';
-export default props => 
-  <Button 
-    variant   ='outlined'
-    className ='Square'      
-  >
+
+export default props =>
+  <button 
+    className ='square'      
+    onClick   ={props.onClick}
+    color     ={props.color}
+  >          
     {props.playerSimbol}
-  </Button>    
+  </button>

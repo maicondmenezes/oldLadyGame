@@ -1,0 +1,9 @@
+.board{
+  display: flex;
+  align-items: center;  
+}
+
+.board-row:after {
+  clear: both;
+  display: table;
+}

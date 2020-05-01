@@ -3,6 +3,9 @@ import React from 'react'
 
 export default props =>
   <div className='GameScreen'>
+    <div className='Title'>
+      {props.title}
+    </div>
     <div className='Board'>
       {props.children}
     </div>
