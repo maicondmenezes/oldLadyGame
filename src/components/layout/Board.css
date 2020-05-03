@@ -1,9 +1,16 @@
-.board{
-  display: flex;
-  align-items: center;  
+.board-table{
+  /* display: flex; */
+  align-items: center;
 }
 
-.board-row:after {
-  clear: both;
-  display: table;
+.board-row{
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+}
+
+.board-square{
+  min-width: 64px;
+  min-height: 64px;
+  margin: 5px;
 }

@@ -52,7 +52,6 @@ class GameScreen extends React.Component {
       return (
         <li key={move}>
           <button 
-            className = 'square' 
             onClick={() => this.jumpTo(move)}
           >
             {desc}
