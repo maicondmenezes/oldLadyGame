@@ -1,0 +1,14 @@
+consertar layout
+renderizar os botões usando laço de repetição (Check)
+mudar a cor dos botões da sequencia vencedora
+fazer um batch pra buildar e publicar o site
+
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+2 0
+2 1
+2 2

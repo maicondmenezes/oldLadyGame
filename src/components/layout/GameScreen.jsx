@@ -47,16 +47,19 @@ class GameScreen extends React.Component {
     const winner = calculateWinner(current.squares);
     const moves = history.map((step, move) => {
       const desc = move ? 
-      'Go to Step ' + move :
-      'Go to Begin';
+      '' + move :
+      'B';
       return (
-        <li key={move}>
+        <ul 
+          key={move}
+          className='StepItem'>
           <button 
+            className = 'StepButton'
             onClick={() => this.jumpTo(move)}
           >
             {desc}
           </button>
-        </li>
+        </ul>
       );
     });
     let status;
@@ -78,7 +81,8 @@ class GameScreen extends React.Component {
         </div>
         <div className='Status'>
           <div>{status}</div>
-          <ol>{moves}</ol>
+          <p className='StepTitle'>Steps:</p>
+          <ol className='Steps'>{moves}</ol>
         </div>
       </div>
     );
